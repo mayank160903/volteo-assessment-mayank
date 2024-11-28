@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
         </div>
       <div className="flex items-center space-x-4">
-        <span className="text-md border rounded-2xl border-gray-400 px-4 py-2 text-gray-500">GMT +09:00</span>
+        <span className="text-md border rounded-2xl border-gray-400 px-4 py-2 text-gray-800">GMT +09:00</span>
         {/* Power Button Icon */}
         <button className="p-2 rounded-full hover:bg-gray-100">
           <img src={power} alt="" />

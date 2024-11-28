@@ -31,7 +31,7 @@ const FirstGrid = () => {
             </h1>
           </div>
             </div>
-            <div className='border mt-3 pl-8 p-6 rounded-xl border-gray-300'>
+            <div className='border pb-9 mt-3 pl-8 p-6 rounded-xl border-gray-300'>
                 <div className="flex mb-2 justify-between items-center">
                     <img src={ship} alt="" />
                     <h1 className='font-bold text-2xl'>SGSIN - NOOSL</h1>
