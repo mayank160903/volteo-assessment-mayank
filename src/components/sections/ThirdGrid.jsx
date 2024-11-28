@@ -89,7 +89,7 @@ const ThirdGrid = () => {
              />
         ))}
 
-        <div className='flex border items-center cursor-pointer py-4 gap-10 text-[#787885] p-4 rounded-xl border-gray-300'>
+        <div className='flex border items-center cursor-pointer gap-10 text-[#787885] p-4 rounded-xl border-gray-300'>
             <div>
                 <img className='size-7' src={plus} alt="" />
             </div>

@@ -8,7 +8,7 @@ const Checkbox = (props) => {
 
 
   return (
-    <div onClick={props.onClick} className={`flex cursor-pointer justify-between rounded-xl p-6 bg-[#F9F9F9] ${props.classes}`}>
+    <div onClick={props.onClick} className={`flex my-2 cursor-pointer justify-between rounded-xl p-6 bg-[#F9F9F9] ${props.classes}`}>
     <div className='flex items-center'>
       <div>
         {marked ? (

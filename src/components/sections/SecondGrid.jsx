@@ -16,12 +16,12 @@ const dummyData =[{
     description : "submitted the Engine Log for 1200-1600 watch hour and completed the Handover Checklist",
     details : "UTC 1055 | LT +6:30"
 },
-{
-    id : 3,
-    title : "",
-    description : "",
-    details : ""
-}
+// {
+//     id : 3,
+//     title : "",
+//     description : "",
+//     details : ""
+// }
 ]
 
 const SecondGrid = () => {
