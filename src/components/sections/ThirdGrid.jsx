@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import cloud from "../../assets/cloud.png"
 import Checkbox from './tasklist/Checkbox'
 import plus from "../../assets/plus.png"
+import Modal from '../Modal'
 
 
 const ThirdGrid = () => {
+
+    const [showModal, setShowModal] = useState(false);
 
     const [tasks, setTasks] = useState([
         {
@@ -12,39 +15,58 @@ const ThirdGrid = () => {
             title: "Deck Log | 1200-1600 Watch",
             assignee : "Wayship",
             due : "",
-            checked: true
+            checked: true,
+            important : false
         },
         {
             id: 2, 
             title: "COVID19 Health Guidelines",
             assignee : "Technical",
             due: " | Due in 2 days",
-            checked: false
+            checked: false,
+            important : true
+
         },
         {
             id: 3, 
             title: "Steering Check",
             assignee : "Captain",
             due: " | Due in 2 hours",
-            checked: false
+            checked: false,
+            important : false
+
         },
         {
             id: 4, 
             title: "ECDIS Check",
             assignee : "Chief Officer",
             due: " | Due in 6 hours",
-            checked: false
+            checked: false,
+            important : false
+
         },
         {
             id: 5, 
             title: "Review Noon Report",
             assignee : "Self",
             due: " | Due in 8 hours",
-            checked: false
+            checked: false,
+            important : false
+
         }
     ]);
 
+    const [selected, setSelected] = useState(2);
+
+    const handleClick = (id) => {
+        setSelected(id);
+    }
+
     const [newTask, setNewTask] = useState('');
+
+    const handleNewTask = () => {
+        setShowModal(true);
+    }
 
 
   return (
@@ -59,15 +81,21 @@ const ThirdGrid = () => {
             </div>
         </div>
         {tasks.map((item) => (
-            <Checkbox key={item.id} title={item.title} assignee={item.assignee} due={item.due} checked={item.checked} />
+            <Checkbox
+             onClick={() => handleClick(item.id)} 
+             classes={selected === item.id ? "border border-red-500" : ""} 
+             key={item.id} title={item.title} assignee={item.assignee} due={item.due} checked={item.checked}
+             important={item.important}
+             />
         ))}
 
-        <div className='flex border items-center py-4 gap-10 text-[#787885] p-4 rounded-xl border-gray-300'>
+        <div className='flex border items-center cursor-pointer py-4 gap-10 text-[#787885] p-4 rounded-xl border-gray-300'>
             <div>
                 <img className='size-7' src={plus} alt="" />
             </div>
-            <div className='text-xm font-medium'>Add a to-do reminder</div>
-        </div>  
+            <div onClick={handleNewTask} className='text-xm font-medium'>Add a to-do reminder</div>
+            <Modal show={showModal} onClose={() => setShowModal(false)} />
+        </div>
         </section>
   )
 }
