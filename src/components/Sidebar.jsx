@@ -27,15 +27,15 @@ const Sidebar = () => {
 
 
   return (
-    <aside className="m-2 mr-1 bg-white border rounded-xl border-gray-300 flex flex-col items-center">
-      <nav className="space-y-6">
+    <aside className="m-2 mr-1 text-sm bg-white border rounded-xl border-gray-300 flex flex-col items-center">
+      <nav className="space-y-2">
         {sidebarItems.map((item) => (
             <Link key={item.name} to={item.route} onClick={() => setSelected(item.name)}
-            className={`m-1 rounded-xl p-3 text-gray-600 flex flex-col justify-center items-center
+            className={`m-2 rounded-xl p-5 text-gray-600 flex flex-col justify-center items-center
                 ${selected === item.name ? 'bg-[#D8E6FF] font-semibold' : 'hover:bg-gray-100'}
                 `}
             >
-                <img src={item.icon} alt={item.name} className='' />
+                <img src={item.icon} alt={item.name} className='size-8' />
                 {item.name}
             </Link>
         ))}        

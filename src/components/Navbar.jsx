@@ -17,7 +17,7 @@ const Navbar = () => {
         <span className="text-md border rounded-2xl border-gray-400 px-4 py-2 text-gray-800">GMT +09:00</span>
         {/* Power Button Icon */}
         <button className="p-2 rounded-full hover:bg-gray-100">
-          <img src={power} alt="" />
+          <img className='size-10' src={power} alt="" />
         </button>
       </div>
     </header>

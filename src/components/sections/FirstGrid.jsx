@@ -8,12 +8,11 @@ const FirstGrid = () => {
     <section className="bg-white shadow-sm col-span-1">
             <div className='border p-6 pl-8 rounded-xl border-gray-300'>
             <div className="flex justify-between pb-8">
-            <img src={hand} alt="" />
-            <img src={merchant} alt="" />
+            <img className="size-10" src={hand} alt="" />
+            <img className="h-10 w-20" src={merchant} alt="" />
             </div>
-          {/* Officer details */}
-          <h2 className="text-md">Second Officer</h2>
-          <h1 className='text-4xl font-bold'>
+          <h2 className="text-md font-medium">Second Officer</h2>
+          <h1 className='text-5xl font-bold'>
           Abdul
           <br />
            Ghani
@@ -23,7 +22,6 @@ const FirstGrid = () => {
           <div className="last-activity">
             <h1 className='py-3 text-2xl font-semibold'>
                 My Last Acivity 
-                {/* add data from to do list */}
             </h1>
 
             <h1 className='text-[#5D6F88]'>
@@ -33,7 +31,7 @@ const FirstGrid = () => {
             </div>
             <div className='border pb-9 mt-3 pl-8 p-6 rounded-xl border-gray-300'>
                 <div className="flex mb-2 justify-between items-center">
-                    <img src={ship} alt="" />
+                    <img className="size-11" src={ship} alt="" />
                     <h1 className='font-bold text-2xl'>SGSIN - NOOSL</h1>
                 </div>
                 <h1 className='font-semibold'>Statements of Facts</h1>

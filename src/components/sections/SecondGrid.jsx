@@ -3,7 +3,7 @@ import refresh from "../../assets/refresh.png"
 import ReadCard from './gridCards/ReadCard'
 import Card from './gridCards/Card'
 
-const dummyData =[{
+const dummyData = [{
     id : 0,
     title : "Second Officer Oliver",
     description : "submitted the Deck Log for 1400-1500 watch hour and completed the Handover Checklist",
@@ -26,13 +26,13 @@ const dummyData =[{
 
 const SecondGrid = () => {
   return (
-    <section className="bg-[#EBF4FF] space-y-3 border rounded-xl p-6 shadow-sm col-span-1">
+    <section className="bg-[#EBF4FF] space-y-3 rounded-xl p-6 shadow-sm col-span-1">
           {/* Daily Stream */}
           <div className="flex justify-between">
-          <h2 className="font-bold text-blue-900 pl-1 text-xl">Daily Stream</h2>
+          <h2 className="font-bold text-blue-900 pl-1 text-2xl">Daily Stream</h2>
           <img src={refresh} className='w-4 h-4' alt="" />
           </div>
-          <p className="text-gray-600 pb-4 font-semibold">Last updated - 4 minutes ago</p>
+          <p className="text-gray-600 pb-3 font-semibold">Last updated - 4 minutes ago</p>
           <ReadCard />
           {dummyData.map((item) => (
             <Card className="" key={item.id} title={item.title} description={item.description} details={item.details} />
