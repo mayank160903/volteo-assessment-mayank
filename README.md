@@ -1,6 +1,4 @@
-# React + Vite
-
-This application is my submission for the assigned Volteo Assessment.
+# This application is my submission for the assigned Volteo Assessment.
 
 
 -Technologies used : Vite + React, Tailwind CSS, GitHub and Vercel.
@@ -18,7 +16,7 @@ This application is my submission for the assigned Volteo Assessment.
 -Created an Error Page for all un-mentioned routes.
 
 
-Visit and test the Website on the Hosted Vercel Link given below :
+# Visit and test the Website on the Hosted Vercel Link given below :
 
 https://volteo-assessment-mayank.vercel.app/
 
