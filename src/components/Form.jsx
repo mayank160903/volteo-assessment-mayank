@@ -29,7 +29,7 @@ const Form = ({addTask}) => {
     }
 
   return (
-    <form onSubmit={handleSubmit} className='flex text-white flex-col items-center justify-center'>
+    <form onSubmit={handleSubmit} className='flex text-black flex-col items-center justify-center'>
       <label htmlFor="">Title</label>
       <input
       id="title"
