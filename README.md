@@ -1,8 +1,23 @@
-# React + Vite
+# This application is my submission for the assigned Volteo Assessment.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+-Technologies used : Vite + React, Tailwind CSS, GitHub and Vercel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Designed the figma template attached to the assessment.
+
+-Implemented basic Responsiveness in the Dashboard Grid.
+
+-Added a feature to add new tasks in the Task-list.
+
+-Used React Router DOM for smooth transition between pages and routes, which are accessible via the Sidebar component.
+
+-Created dummy pages for the side-bar routes.
+
+-Created an Error Page for all un-mentioned routes.
+
+
+# Visit and test the Website on the Hosted Vercel Link given below :
+
+https://volteo-assessment-mayank.vercel.app/
+
+Thank You
