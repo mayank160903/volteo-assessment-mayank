@@ -3,7 +3,8 @@ import hand from "../../assets/hand.png"
 import ship from "../../assets/ship.png"
 import merchant from "../../assets/merchant.png"
 
-const FirstGrid = () => {
+const ProfileGrid = () => {
+    // Profile Grid to display profile of the administrator
   return (
     <section className="bg-white shadow-sm col-span-1">
             <div className='border p-6 pl-8 rounded-xl border-gray-300'>
@@ -52,4 +53,4 @@ const FirstGrid = () => {
   )
 }
 
-export default FirstGrid
+export default ProfileGrid

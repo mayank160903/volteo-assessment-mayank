@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
 import Layout from './Layout'
 import Marpol from './pages/Marpol'
@@ -9,12 +9,14 @@ import Insights from './pages/Insights'
 import Settings from './pages/Settings'
 import Apps from './pages/Apps'
 import Workspaces from './pages/Workspaces'
-import NotFound from './components/NotFound'
+import NotFound from './pages/NotFound'
 
+// Main app.jsx file, containing all routes, handled by react-router-dom
 
 function App() {
   return (
     <Router>
+      {/*Routes wrapped by Layout component, to implement Sidebar and Navbar in all the routes */}
       <Layout>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -25,7 +27,8 @@ function App() {
         <Route exact path="/insights" element={<Insights />} />
         <Route exact path="/settings" element={<Settings />} />
         <Route exact path="/apps" element={<Apps />} />
-        <Route path="*" element={<NotFound />} />
+        {/* route to handle all the undefined endpoints */}
+        <Route path="*" element={<NotFound />} /> 
       </Routes>
       </Layout>
     </Router>

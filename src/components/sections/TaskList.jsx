@@ -4,9 +4,12 @@ import Checkbox from "./tasklist/Checkbox";
 import plus from "../../assets/plus.png";
 import Modal from "../Modal";
 
-const ThirdGrid = () => {
+const TaskList = () => {
+  // List of all tasks, to do list with add task and mark task as completed functionality
+
   const [showModal, setShowModal] = useState(false);
 
+  // state to handle the dummy data of task list
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -87,6 +90,7 @@ const ThirdGrid = () => {
           <img className="size-12" src={cloud} alt="" />
         </div>
       </div>
+      {/* mapping dummy data of tasks to display as a task list using Checkbox.jsx component and passing props */}
       {tasks.map((item) => (
         <Checkbox
           onClick={() => handleClick(item.id)}
@@ -108,6 +112,7 @@ const ThirdGrid = () => {
         <div onClick={handleNewTask} className="text-xm font-medium">
           Add a to-do reminder
         </div>
+        {/* Modal to open the add-task-form */}
         <Modal
           addTask={addTask}
           show={showModal}
@@ -118,4 +123,4 @@ const ThirdGrid = () => {
   );
 };
 
-export default ThirdGrid;
+export default TaskList;
