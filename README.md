@@ -17,7 +17,6 @@ GitHub: Version control and source code management.
 
 Vercel: Deployment and hosting.
 
-# 📂 Project Overview
 
 # 📌 Features
 Figma Template Implementation: Accurately coded the React application based on the provided Figma design.
