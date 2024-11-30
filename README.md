@@ -22,8 +22,7 @@ Sidebar Pages: Created dummy pages for each sidebar route to demonstrate the nav
 Error Handling: Added an error page to handle all undefined routes gracefully.
 
 # 🏗 Folder Structure
-css
-Copy code
+```
 /src
   ├── components
   │   ├── TaskList.jsx
@@ -36,6 +35,7 @@ Copy code
   │   └── AppRouter.jsx
   ├── assets
   └── App.jsx
+```
 # 🔄 Key Considerations
 Component Reusability (DRY Principle): Modularized code into reusable functional components.
 Code Quality: Maintained clean, readable, and well-commented code.
