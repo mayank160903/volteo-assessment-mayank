@@ -37,13 +37,17 @@ const Form = ({ addTask }) => {
       <label htmlFor="">Title</label>
       <input
         id="title"
+        required
         value={title}
+        placeholder=" Eg. Shipment status"
         onChange={(e) => setTitle(e.target.value)}
         type="text"
       />
       <label htmlFor="">Assignee</label>
       <input
         id="assignee"
+        required
+        placeholder=" Eg. Wayship"
         value={assignee}
         onChange={(e) => setAssignee(e.target.value)}
         type="text"
@@ -51,7 +55,9 @@ const Form = ({ addTask }) => {
       <label htmlFor="">Due Date/Time</label>
       <input
         id="dueDate"
+        required
         value={dueDate}
+        placeholder=" due in x Days"
         onChange={(e) => setDueDate(e.target.value)}
         type="text"
       />
@@ -60,7 +66,7 @@ const Form = ({ addTask }) => {
       <input
         id="important"
         checked={important}
-        onChange={(e) => setImportant(e.target.value)}
+        onChange={(e) => setImportant(!important)}
         type="checkbox"
       />
       </div>

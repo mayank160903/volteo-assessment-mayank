@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import menu from "../../../assets/menu.png";
 import checked from "../../../assets/checked.png";
 import unchecked from "../../../assets/unchecked.png";
 
 const Checkbox = (props) => {
   // Task List's check box component
-  const [marked, setIsMarked] = useState(false);
+  const [marked, setIsMarked] = useState(props.checked || false);
+
+  useEffect(()=> {
+    setIsMarked(props.checked);
+  }, [props.checked]);
+
 
   return (
     <div
@@ -15,21 +20,12 @@ const Checkbox = (props) => {
       <div className="flex items-center">
         <div>
             {/* Setting checkbox based on the state of marked for each checkbox */}
-          {marked ? (
             <img
-              onClick={() => setIsMarked(false)}
-              className="cursor-pointer pr-3 size-15"
-              src={checked}
-              alt=""
-            />
-          ) : (
-            <img
-              onClick={() => setIsMarked(true)}
-              className="cursor-pointer pr-3 size-15"
-              src={unchecked}
-              alt=""
-            />
-          )}
+            onClick={() => setIsMarked(!marked)}
+            className="cursor-pointer pr-3 size-15"
+            src={marked ? checked : unchecked}
+            alt="Checkbox"
+          />
         </div>
         <div className="flex flex-col">
             {/* Setting CSS based on the input of the "important" field of the add-task-form */}

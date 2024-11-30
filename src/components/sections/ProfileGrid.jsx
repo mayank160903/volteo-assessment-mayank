@@ -18,7 +18,7 @@ const ProfileGrid = () => {
           <br />
            Ghani
           </h1>
-          <p className="text-gray-600 font-semibold text-xs mb-6">Crew ID 86526</p>
+          <p className="text-gray-900 font-medium text-sm mb-6">Crew ID 86526</p>
           <hr />
           <div className="last-activity">
             <h1 className='py-3 text-2xl font-semibold'>

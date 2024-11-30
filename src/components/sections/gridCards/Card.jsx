@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <div className="rounded-xl mt-6 p-5 bg-white">
       <h2 className="pb-6 pl-3 pt-2">
-        <b className="text-lg text-[#213838] ">{props.title} </b>
+        <b className="text-lg text-[#213838] font-semibold">{props.title} </b>
         <b className="font-light text-lg">{props.description}</b>
       </h2>
 
