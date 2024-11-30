@@ -4,7 +4,7 @@ This repository contains my implementation for the Volteo assessment, built acco
 # 🚀 Live Demo
 Visit the live version of the application here:
 
-🔗 Volteo Assessment Live App
+🔗 [ Volteo Assessment Live App](https://volteo-assessment-mayank.vercel.app/)
 
 # 🛠 Technologies Used
 Vite + React: For efficient and performant frontend development.
