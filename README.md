@@ -12,8 +12,9 @@ React Router DOM: For seamless page navigation.
 GitHub: Version control and source code management.
 Vercel: Deployment and hosting.
 
-# 📂 Project Overview
-# # 📌 Features
+# # # 📂 Project Overview
+
+# 📌 Features
 Figma Template Implementation: Accurately coded the React application based on the provided Figma design.
 Responsive Dashboard: Ensured the dashboard grid layout adapts gracefully to different screen sizes.
 Task Management: Implemented a feature allowing users to add new tasks to the task list.
