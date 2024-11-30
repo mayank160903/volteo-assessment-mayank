@@ -59,6 +59,6 @@ Attention to Detail: Aligned closely with the provided Figma design.
 
 # 📌 Repository
 Access the complete code here:
-🔗 GitHub Repository
+🔗 [GitHub Repository](https://github.com/mayank160903/volteo-assessment-mayank)
 
 Thank you for reviewing my submission!
